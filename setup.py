@@ -44,6 +44,7 @@ except ImportError:
 else:
     distutils644.install()
 
+print(sys.version_info)      
 if sys.version_info[0] > 2:
     exec(b'')
 else:
