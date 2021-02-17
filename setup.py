@@ -32,6 +32,7 @@ can be used to encapsulate multiple payloads into a single message.
 
 import io
 import os
+import sys
 
 import distutils.core
 from distutils.command.sdist import sdist as distutils_sdist
