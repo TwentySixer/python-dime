@@ -32,7 +32,7 @@ can be used to encapsulate multiple payloads into a single message.
 
 import io
 import os
-import sys
+
 
 import distutils.core
 from distutils.command.sdist import sdist as distutils_sdist
@@ -44,11 +44,11 @@ except ImportError:
 else:
     distutils644.install()
 
-print(sys.version_info)      
-if sys.version_info[0] > 2:
-    exec(b'')
-else:
-    exec b''  # Python 2.6 or 2.7 is required      
+#print(sys.version_info)      
+#if sys.version_info[0] > 2:
+#    exec(b'')
+#else:
+#    exec b''  # Python 2.6 or 2.7 is required      
 
 
 class cmd_sdist(distutils_sdist):
