@@ -43,7 +43,11 @@ except ImportError:
 else:
     distutils644.install()
 
-exec b''  # Python 2.6 or 2.7 is required
+if sys.version_info[0] > 2:
+    exec(b'')
+else:
+    exec b''  # Python 2.6 or 2.7 is required      
+
 
 class cmd_sdist(distutils_sdist):
 
